@@ -1,40 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+	box-sizing: border-box;
+}
+body{
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	padding: 1rem;
+	font-family: "Poppins", sans-serif;
+	margin: 0;
+	background: #141E30;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+	
+}
+header{
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	background: #141E30;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	width: 100%;
+	opacity: 0.9;
+}
+.main-h1 {
+	color: lightgray;
+	font-size: 4rem;
+	font-family: Poppins;
+
+
+}
+.subtitle{
+	color: salmon;
+	font-family: Poppins;
+
+}
+.fav-main{
+	padding: 1rem;
+	text-align: center;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	background: rgba(0, 0, 0, .8);
+	margin: 2rem 0;
+	
+}
+
+.fav-main {background-image: linear-gradient(to right, #16222A 0%, #3A6073  51%, #16222A  100%)}
+.fav-main {
+	
+	text-align: center;
+	text-transform: uppercase;
+	transition: 0.5s;
+	background-size: 200% auto;
+	color: white;          
+	display: block;
+}
+
+.fav-main:hover {
+	background-position: right center; /* change the direction of the change here */
+	color: #fff;
+	text-decoration: none;
+}
+.img-car{
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.container-main{
+	background-color: rgba(169, 169, 169, .5);
+}
 .dropbtn {
-		background-color: #04AA6D;
-		color: white;
-		padding: 16px;
-		font-size: 16px;
-		border: none;
-	}
+	background-color: transparent;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+}
 
-	/* The container <div> - needed to position the dropdown content */
-	.dropdown {
-		position: relative;
-		display: inline-block;
-	}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+	background-color: #transparent;
+	position: relative;
+	display: inline-block;
 
-	/* Dropdown Content (Hidden by Default) */
-	.dropdown-content {
-		display: none;
-		position: absolute;
-		background-color: #f1f1f1;
-		min-width: 160px;
-		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-		z-index: 1;
-	}
+}
+#dropdown-right{
+	float: right;
+}
+#dropdown-content-right{
+	right: 0;
+	left: auto;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+	display: none;
+	position: absolute;
+	
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	background-color: rgba(50, 50, 50, .5);
 
-	/* Links inside the dropdown */
-	.dropdown-content a {
-		color: black;
-		padding: 12px 16px;
-		text-decoration: none;
-		display: block;
-	}
+}
 
-	/* Change color of dropdown links on hover */
-	.dropdown-content a:hover {background-color: #ddd;}
+/* Links inside the dropdown */
+.dropdown-content a {
+	color: white;
+	padding: 12px 16px;
+	text-decoration: none;
 
-	/* Show the dropdown menu on hover */
-	.dropdown:hover .dropdown-content {display: block;}
+	display: flex;
+}
 
-	/* Change the background color of the dropdown button when the dropdown content is shown */
-	.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd; text-decoration: none;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: flex; flex-direction: column;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #141E30;}

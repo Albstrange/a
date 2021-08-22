@@ -62,3 +62,4 @@ HTMLImporter.import = function(url) {
   http_request.send();
 
 };
+$('.carousel').carousel('cycle');
